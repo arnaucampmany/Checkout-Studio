@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Studios | Optimización de Checkouts WooCommerce</title>
+    <script>
+        // GTM Data Layer Initialization
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+
+        // Consent Mode v2 Defaults
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied'
+        });
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TXC6HXLL');</script>
+    <!-- End Google Tag Manager -->
+    <meta name="description"
+        content="Domina tus ventas. Convierte con precisión. Transición a checkouts de alta conversión para WooCommerce.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css?v=12">
+    <!-- Favicon (User uploaded) -->
+    <link rel="icon" type="image/png" href="favicon_tab.png">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXC6HXLL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Background elements -->
+    <div class="bg-gradient-glow"></div>
+    <div class="bg-gradient-glow-bottom"></div>
+
+    <!-- Header Pill -->
+    <header class="navbar-wrapper">
+        <div class="nav-pill">
+            <div class="logo">
+                <img src="logo.png" alt="Checkout Studios Logo" class="logo-image-nav">
+            </div>
+            <a href="#contacto" class="btn btn-primary btn-nav">
+                Trabajemos juntos
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="plataforma" class="hero container">
+        <div class="hero-content text-center fade-in-up">
+            <!-- Ticker Urgency -->
+            <div class="urgency-ticker">
+                <span class="pulse-dot"></span>
+                <span class="ticker-text">Solo aceptamos 5 implementaciones al mes</span>
+            </div>
+
+            <h1 class="hero-title">
+                Hacemos que tu Checkout<br>
+                <span class="text-cursive-gradient">convierta más.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Vende más sin buscar nuevos clientes. Implementamos el primer motor de pagos de alto rendimiento para
+                WooCommerce en solo 72h, sin reuniones interminables.
+            </p>
+            <div class="hero-cta-wrap" style="margin-top: 2rem; margin-bottom: 1rem;">
+                <a href="#contacto" class="btn btn-primary btn-large">
+                    Quiero que mi Woo venda más
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-Time Processing Animation Section -->
+    <section class="woo-animation-section section" style="padding: 1rem 0 2rem 0;">
+        <div class="animation-container" style="margin-top: 0;">
+            <!-- Tracking Lines SVG -->
+            <svg class="tracking-lines-svg" viewBox="0 0 1200 250" preserveAspectRatio="none">
+                <path d="M0,75 Q600,125 1200,75" />
+                <path d="M0,125 L1200,125" />
+                <path d="M0,175 Q600,125 1200,175" />
+            </svg>
+
+            <!-- Avatars Layer -->
+            <div id="avatarsLayer" class="avatars-layer"></div>
+
+            <!-- Dashboard Center (WooCommerce) -->
+            <div class="woo-center">
+                <div class="woo-glow"></div>
+                <!-- WooCommerce Isotype SVG (Speech Bubble with 'Woo') -->
+                <svg viewBox="0 0 100 100" class="woo-logo-svg">
+                    <path
+                        d="M50 15C30.67 15 15 28.432 15 45c0 9.87 5.613 18.625 14.316 24.162l-2.008 10.603c-.22 1.164.936 2.058 1.95 1.517l11.458-6.11C43.587 76.536 46.738 77 50 77c19.33 0 35-13.432 35-30S69.33 15 50 15z"
+                        fill="#96588a" />
+                    <text x="50" y="53"
+                        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+                        font-weight="900" font-size="22" fill="white" text-anchor="middle"
+                        letter-spacing="-1">Woo</text>
+                </svg>
+            </div>
+
+            <!-- Orders Layer -->
+            <div id="ordersLayer" class="orders-layer"></div>
+        </div>
+    </section>
+
+    <!-- Problem vs Solution Full Width -->
+    <section class="split-section container">
+        <!-- Problem Card -->
+        <div class="split-card problem-card fade-in-up">
+            <!-- Background Graph (Declining) -->
+            <svg class="card-bg-graph" viewBox="0 0 400 200" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="grad-down" x1="0" y1="1" x2="0" y2="0">
+                        <stop offset="0%" stop-color="transparent" />
+                        <stop offset="100%" stop-color="rgba(255, 60, 60, 0.15)" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,50 Q100,50 150,90 T300,160 L400,180" class="graph-line-down" />
+                <path d="M0,50 Q100,50 150,90 T300,160 L400,180 L400,200 L0,200 Z" fill="url(#grad-down)" />
+            </svg>
+            <div class="card-header">
+                <div class="icon-circle icon-muted">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                </div>
+                <div class="section-tag">EL PROBLEMA</div>
+            </div>
+            <h2 class="split-title">WooCommerce frena tus ventas.</h2>
+            <p>El checkout nativo es lento, ruidoso y está diseñado para blogs, no para tiendas que facturan. Obligar a
+                un cliente a esperar 3 minutos para pagar dispara tu abandono al 70%. Estás perdiendo al cliente más
+                valioso en el último metro.</p>
+        </div>
+
+        <!-- Solution Card -->
+        <div class="split-card solution-card fade-in-up" style="animation-delay: 0.2s;">
+            <!-- Background Graph (Rising) -->
+            <svg class="card-bg-graph" viewBox="0 0 400 200" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="grad-up" x1="0" y1="1" x2="0" y2="0">
+                        <stop offset="0%" stop-color="transparent" />
+                        <stop offset="100%" stop-color="rgba(107, 98, 255, 0.4)" />
+                    </linearGradient>
+                </defs>
+                <!-- Starts at 180 to match the end of the previous graph -->
+                <path d="M0,180 Q150,180 250,100 T400,20" class="graph-line-up" />
+                <path d="M0,180 Q150,180 250,100 T400,20 L400,200 L0,200 Z" fill="url(#grad-up)" />
+            </svg>
+            <div class="card-glow-bg"></div>
+            <div class="card-header">
+                <div class="icon-circle icon-accent">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <div class="section-tag tag-purple">LA SOLUCIÓN</div>
+            </div>
+            <h2 class="split-title">Ingeniería de conversión.</h2>
+            <p>Tras cientos de horas de testing, hemos desarrollado la implementación más eficiente del mercado. Una
+                arquitectura que reduce la fricción en un 90%, permitiendo cerrar ventas en segundos con una experiencia
+                fluida y pagos express.</p>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard-section section container" style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="text-center fade-in-up mb-4">
+            <h2 class="hero-title"
+                style="font-size: 3rem; line-height: 1.1; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                ¿Qué conseguirás con nuestro<br>
+                <span class="text-cursive-gradient">Checkout?</span>
+            </h2>
+        </div>
+
+        <!-- Dashboard Mockup -->
+        <div class="hero-dashboard fade-in-up" style="animation-delay: 0.2s; margin: 2rem auto 0;">
+            <div class="dashboard-window">
+                <div class="window-header">
+                    <div class="dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="window-title">checkout.studio/dashboard</div>
+                </div>
+                <div class="window-body">
+                    <!-- Metrics Overlay -->
+                    <div class="metrics-grid">
+                        <div class="metric-box">
+                            <div class="metric-value highlight-cyan">- 25%</div>
+                            <div class="metric-label">ABANDONO DE CARRITOS</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">+ 5%</div>
+                            <div class="metric-label">FACTURACIÓN SIN CPA</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value highlight-green">- 90%</div>
+                            <div class="metric-label">TIEMPO DE FRICCIÓN EN EL PAGO</div>
+                        </div>
+                    </div>
+
+                    <!-- Abstract Background Graphic -->
+                    <div class="dashboard-graphic">
+                        <div class="circuit-lines"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Glow effect behind dashboard -->
+            <div class="dashboard-glow"></div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculadora" class="section container" style="padding-top: 2rem; padding-bottom: 3rem;">
+        <div class="calculator-wrapper fade-in-up">
+            <div class="calculator-card glass-panel">
+                <div class="calc-grid">
+                    <!-- Inputs Column -->
+                    <div class="calc-inputs" style="padding-right: 1.5rem;">
+                        <div class="calc-header">
+                            <h3 class="calc-title">Calcula tu potencial de crecimiento</h3>
+                            <p class="calc-subtitle">Descubre cuánto estás dejando sobre la mesa con tu checkout actual.
+                            </p>
+                        </div>
+
+                        <!-- Slider 1: Facturación -->
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="calc-revenue">Facturación mensual media</label>
+                                <div class="slider-input-wrapper">
+                                    <input type="number" id="val-revenue" class="slider-value-input" value="15000"
+                                        min="0" max="100000">
+                                    <span class="slider-input-symbol">€</span>
+                                </div>
+                            </div>
+                            <input type="range" id="calc-revenue" class="styled-slider" min="0" max="100000" step="500"
+                                value="15000">
+                        </div>
+
+                        <!-- Slider 2: Pedidos -->
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="calc-orders">Pedidos mensuales medios</label>
+                                <div class="slider-input-wrapper">
+                                    <input type="number" id="val-orders" class="slider-value-input" value="250" min="0"
+                                        max="2000">
+                                </div>
+                            </div>
+                            <input type="range" id="calc-orders" class="styled-slider" min="0" max="2000" step="10"
+                                value="250">
+                        </div>
+
+                        <!-- Slider 3: Mejora -->
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="calc-improvement">Mejora del Checkout Studios</label>
+                                <div class="slider-input-wrapper">
+                                    <span class="slider-input-symbol">+</span>
+                                    <input type="number" id="val-improvement" class="slider-value-input highlight-cyan"
+                                        value="5" min="0" max="100">
+                                    <span class="slider-input-symbol">%</span>
+                                </div>
+                            </div>
+                            <input type="range" id="calc-improvement" class="styled-slider slider-cyan" min="0"
+                                max="100" step="1" value="5">
+                            <p class="slider-caption">* 5% es el incremento mínimo histórico garantizado en nuestros
+                                clientes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Results Column -->
+                    <div class="calc-results">
+                        <div class="results-glow"></div>
+                        <div class="results-content">
+                            <div class="result-label">Ingresos Mensuales Extra:</div>
+                            <div class="result-value text-cursive-gradient" id="calc-result-extra">€ 3.187</div>
+
+                            <div class="result-divider"></div>
+
+                            <div class="result-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">Ticket Medio (AOV) Estimado:</span>
+                                    <span class="stat-value highlight-cyan" id="calc-projected-conv">---</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Facturación Total Proyectada:</span>
+                                    <span class="stat-value" id="calc-total-revenue">€ 120.000</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Retorno de Inversión (ROI):</span>
+                                    <span class="stat-value highlight-cyan" id="calc-roi-months">Mes 1</span>
+                                </div>
+                            </div>
+
+                            <p class="result-disclaimer">* Los ingresos extra se añaden puramente a tu beneficio neto ya
+                                que no requieren inversión adicional en captación (CPA = 0€).</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Below Calculator -->
+            <div class="text-center fade-in-up" style="margin-top: 3rem;">
+                <a href="#contacto" class="btn btn-primary">
+                    <span>Quiero mejorar mi conversión</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section (More info) -->
+    <section id="beneficios" class="features section container" style="padding-top: 3rem;">
+        <div class="text-center fade-in-up">
+            <h2 class="section-title">Ingeniería de <span class="text-cursive-gradient">Conversión.</span></h2>
+            <p class="section-subtitle">No es solo diseño, es arquitectura avanzada diseñada estrictamente para
+                maximizar cada céntimo de tu inversión en captación.</p>
+        </div>
+
+        <div class="bento-grid">
+            <!-- Feature 1 -->
+            <div class="bento-card glass-panel fade-in-up">
+                <div class="feature-hilight">
+                    <span class="express-btn logo-apple"> Pay</span>
+                    <span class="express-btn logo-google">G Pay</span>
+                </div>
+                <h3>Pagos Express</h3>
+                <p>Convierte impulsos en ventas reales. Con Apple Pay y Google Pay, tu cliente paga en 1 clic validando
+                    con su biometría (FaceID). Cero formularios, cero tiempo en pensárselo.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bento-card glass-panel fade-in-up" style="animation-delay: 0.1s;">
+                <div class="feature-hilight">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg"
+                        alt="Stripe"
+                        style="height: 32px; filter: drop-shadow(0 2px 8px rgba(99, 91, 255, 0.4)); margin-left: -6px;" />
+                </div>
+                <h3>Infraestructura Stripe</h3>
+                <p>Para implementar nuestro checkout es imprescindible procesar con Stripe. Nosotros nos encargamos de
+                    configurarlo desde cero para ti o adaptarlo a la perfección si ya lo utilizas en tu tienda.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bento-card glass-panel fade-in-up" style="animation-delay: 0.2s;">
+                <div class="feature-hilight" style="color: #0079C1;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="margin-left: -4px;">
+                        <path
+                            d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z">
+                        </path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </div>
+                <h3>Métodos Alternativos VIP</h3>
+                <p>No dejes ni un solo euro sobre la mesa. Integramos y optimizamos PayPal, pago a plazos (Klarna) y
+                    Bizum para derribar cualquier barrera de entrada.</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="bento-card glass-panel fade-in-up">
+                <div class="feature-hilight" style="color: #6B62FF;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="margin-left: -4px;">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                </div>
+                <h3>Puntos de Recogida Nativos</h3>
+                <p>Aniquilamos la objeción constante "no estoy en casa para recibirlo". Desplegamos mapas de lockers
+                    directamente en el carrito si tu empresa de mensajería lo permite, o te lo configuramos de cero.</p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="bento-card glass-panel fade-in-up" style="animation-delay: 0.1s;">
+                <div class="feature-hilight" style="color: #50E3C2;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="margin-left: -6px;">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                </div>
+                <h3>Order Bumps Ultraconversivos</h3>
+                <p>Inyecta rentabilidad pura a cada pedido. Los añadimos de manera inteligente directamente en el
+                    carrito
+                    para aumentar tu ticket medio entre un 10% y un 30% de forma automática.</p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="bento-card glass-panel fade-in-up" style="animation-delay: 0.2s;">
+                <div class="feature-hilight" style="color: #F5A623;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="margin-left: -4px;">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <h3>Skip-Cart (Direct Checkout)</h3>
+                <p>Para webs mono-producto, el carrito es un paso inútil. Enviamos al comprador desde la ficha directo a
+                    la pasarela final. A menos clics, más ingresos netos inmediatos.</p>
+            </div>
+
+            <!-- Feature 7 -->
+            <div class="bento-card bento-card-wide glass-panel fade-in-up" style="grid-column: span 3;">
+                <div class="feature-hilight highlight-purple">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                </div>
+                <h3 class="bento-title">Autocompletado Mágico (Google API)</h3>
+                <p class="bento-text">Tus clientes nunca más abandonarán por culpa de teclear. Al introducir los
+                    primeros caracteres, predecimos la calle, ciudad y código postal al instante. Reducimos el error
+                    humano a cero y salvamos de lleno toda la conversión perdida en tráfico móvil.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Checkout Section -->
+    <section id="demo-checkout" class="section container" style="padding-top: 4rem; padding-bottom: 2rem;">
+        <div class="demo-card glass-panel text-center fade-in-up"
+            style="position: relative; overflow: hidden; padding: 4rem 2rem; border-radius: 24px;">
+            <!-- Background Glows -->
+            <div
+                style="position: absolute; top: -50%; left: -20%; width: 60%; height: 100%; background: radial-gradient(circle, rgba(162,160,255,0.15) 0%, transparent 70%); filter: blur(60px); pointer-events: none;">
+            </div>
+            <div
+                style="position: absolute; bottom: -50%; right: -20%; width: 60%; height: 100%; background: radial-gradient(circle, rgba(80,227,194,0.1) 0%, transparent 70%); filter: blur(60px); pointer-events: none;">
+            </div>
+
+            <!-- Content -->
+            <div style="position: relative; z-index: 2; max-width: 700px; margin: 0 auto;">
+                <div class="section-tag mb-3"
+                    style="color: #ff4d4f; border-color: rgba(255, 77, 79, 0.2); background: rgba(255, 77, 79, 0.05); display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.4rem 1rem;">
+                    <span class="pulse-red-dot"
+                        style="display: block; width: 8px; height: 8px; min-width: 8px; min-height: 8px; flex-shrink: 0; border-radius: 50%; background-color: #ff4d4f;"></span>
+                    TESTING EN VIVO
+                </div>
+                <h2 class="hero-title mb-4" style="font-size: 2.5rem;">
+                    Pon a prueba nuestro<br>
+                    <span class="text-cursive-gradient">rendimiento.</span>
+                </h2>
+                <p class="section-subtitle mb-5"
+                    style="color: #A0A0B0; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Experimenta en primera persona la velocidad, la usabilidad de la API de Google y la fricción cero.
+                    Accede a nuestra tienda demo y simula una compra real.
+                </p>
+
+                <a href="#" class="btn btn-primary demo-btn"
+                    style="margin-top: 1.5rem; padding: 1rem 2.5rem; font-size: 1.1rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem;">
+                    <span>Probar Checkout Demo</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Showcase Section -->
+    <section id="resultados" class="section container" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <div class="text-center fade-in-up mb-5">
+            <h2 class="hero-title" style="font-size: 2.5rem; margin-bottom: 1.5rem;">
+                ¿Quieres estos resultados en<br>
+                <span class="text-cursive-gradient">tu WooCommerce?</span>
+            </h2>
+            <p class="section-subtitle">
+                No son proyecciones, son datos reales de nuestros clientes. El aumento mínimo histórico tras la
+                implementación ha sido del <strong>5%</strong>, con una media actual del <strong>16%</strong> en
+                facturación neta. Resultados directos al beneficio neto desde el primer día.
+            </p>
+        </div>
+
+        <div class="results-showcase-grid fade-in-up" style="margin-top: 3.5rem;">
+            <!-- Result Card 1 -->
+            <div class="result-card glass-panel fade-in-up" onclick="openLightbox('results-1.jpg')">
+                <img src="results-1.jpg" alt="Resultado Analytics 1" class="result-img">
+                <div class="result-overlay">
+                    <span class="expand-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <polyline points="9 21 3 21 3 15"></polyline>
+                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Result Card 2 -->
+            <div class="result-card glass-panel fade-in-up" onclick="openLightbox('results-2.jpg')">
+                <img src="results-2.jpg" alt="Resultado Analytics 2" class="result-img">
+                <div class="result-overlay">
+                    <span class="expand-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <polyline points="9 21 3 21 3 15"></polyline>
+                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Result Card 3 -->
+            <div class="result-card glass-panel fade-in-up" onclick="openLightbox('results-3.jpg')">
+                <img src="results-3.jpg" alt="Resultado Analytics 3" class="result-img">
+                <div class="result-overlay">
+                    <span class="expand-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <polyline points="9 21 3 21 3 15"></polyline>
+                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Result Card 4 -->
+            <div class="result-card glass-panel fade-in-up" onclick="openLightbox('results-4.jpg')">
+                <img src="results-4.jpg" alt="Resultado Analytics 4" class="result-img">
+                <div class="result-overlay">
+                    <span class="expand-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <polyline points="9 21 3 21 3 15"></polyline>
+                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="text-center fade-in-up" style="margin-top: 4rem;">
+            <a href="#contacto" class="btn btn-primary btn-large">
+                <span>Quiero estos resultados</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Pricing Section -->
+    <section id="precio" class="pricing section container">
+        <h2 class="hero-title fade-in-up text-center" style="font-size: 2.8rem; margin-bottom: 1rem;">Inversión <span
+                class="text-cursive-gradient">Transparente.</span></h2>
+        <p class="section-subtitle fade-in-up text-center">Implementamos tu checkout en 72h desde el kick-off. Solo
+            necesitamos tus accesos y ponemos todo en marcha.</p>
+
+        <div class="pricing-card glass-panel fade-in-up">
+            <div class="pricing-header">
+                <h3>Implementación Checkout Studios</h3>
+                <div class="price">
+                    <span class="amount">1.999€</span>
+                </div>
+                <p class="vat-note">IVA incluido. Pago por implementación del sistema.</p>
+            </div>
+            <div class="pricing-body">
+                <ul class="pricing-features">
+                    <li><svg viewBox="0 0 24 24" fill="none" class="check-icon" stroke="currentColor">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg> <span>Implementación completa del checkout de alta conversión</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" class="check-icon" stroke="currentColor">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg><span>Integración Wallet (Apple Pay / Google Pay)</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" class="check-icon" stroke="currentColor">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg><span>Configuración Order Bumps y Upsells</span></li>
+                    <li><svg viewBox="0 0 24 24" fill="none" class="check-icon" stroke="currentColor">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg><span>Despliegue en producción en <strong>72h</strong> tras kick-off</span></li>
+                </ul>
+            </div>
+            <div class="pricing-footer">
+                <div class="maintenance">
+                    <h4>Plan de Continuidad Técnica</h4>
+                    <p class="maint-desc">Nos encargamos de que tu checkout siga funcionando al máximo rendimiento:</p>
+                    <ul class="maint-included-list">
+                        <li>✦ Monitoreo y actualización de APIs de pasarelas de pago</li>
+                        <li>✦ Gestión del flujo de datos entre plataformas (WooCommerce, CRM, pasarelas)</li>
+                        <li>✦ Vigilancia activa para que tu checkout no se rompa con actualizaciones del core</li>
+                        <li>✦ Soporte técnico prioritario ante cualquier incidencia</li>
+                    </ul>
+                    <div class="maintenance-options">
+                        <div class="maint-option active">
+                            <div class="maint-option-label">Anual <span class="badge-saving">Ahorra 69€</span></div>
+                            <div class="maint-price-row"><span class="m-price">399€</span><span
+                                    class="m-period">/año</span></div>
+                            <div class="maint-option-note">Facturado al mes siguiente</div>
+                        </div>
+                        <div class="maint-option">
+                            <div class="maint-option-label">Mensual</div>
+                            <div class="maint-price-row"><span class="m-price">39€</span><span
+                                    class="m-period">/mes</span></div>
+                            <div class="maint-option-note">Facturado al mes siguiente</div>
+                        </div>
+                    </div>
+                    <p class="maint-required-note">⚠️ Este plan es obligatorio para garantizar el correcto
+                        funcionamiento del checkout y la calidad del servicio que ofrecemos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contacto" class="cta section container" style="padding-top: 1rem;">
+        <div class="cta-box glass-panel text-center fade-in-up">
+            <h2 class="hero-title" style="font-size: 2.2rem; margin-bottom: 1rem;">¿Listo para dejar de perder <span
+                    class="text-cursive-gradient">ventas?</span></h2>
+            <p>Agenda una revisión gratuita de tu checkout actual. Analizamos fugas de conversión y te decimos si eres
+                uno de los 5 proyectos que aceptaremos este mes.</p>
+            <form class="contact-form"
+                onsubmit="event.preventDefault(); alert('Solicitud recibida. Analizaremos tu tienda y te escribiremos por email.');">
+                <div class="form-row">
+                    <input type="text" placeholder="Tu nombre" required class="input-glass">
+                    <input type="email" placeholder="Email corporativo" required class="input-glass">
+                </div>
+                <div class="form-row mt-2">
+                    <input type="tel" placeholder="Número de teléfono" required class="input-glass">
+                    <input type="url" placeholder="URL de tu WooCommerce" required class="input-glass">
+                </div>
+                <select class="input-glass mt-2 mb-3" required>
+                    <option value="" disabled selected>Facturación mensual aproximada</option>
+                    <option value="1">Menos de 10.000€/mes</option>
+                    <option value="2">10.000€ - 50.000€/mes</option>
+                    <option value="3">Más de 50.000€/mes</option>
+                </select>
+                <button type="submit" class="btn btn-primary w-100">Solicitar Revisión Gratuita</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer container">
+        <div class="footer-pill">
+            <div class="footer-pill-left">
+                <span>&copy; 2026 Checkout Studios</span>
+            </div>
+            <div class="footer-pill-center">
+                <img src="logo.png" alt="Checkout Studios Logo" class="logo-image-footer">
+            </div>
+            <div class="footer-pill-right">
+                <a href="https://www.linkedin.com/company/checkout-studios/" target="_blank" rel="noopener"
+                    class="social-box" aria-label="LinkedIn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom-links"
+            style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 20px; font-size: 0.85rem; color: var(--text-muted);">
+            <a href="privacy-policy.html" style="color: inherit; text-decoration: none;">Privacy Policy</a>
+            <span>|</span>
+            <a href="#" id="open-cookie-settings" style="color: inherit; text-decoration: none;">Cookie Settings</a>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner glass-panel">
+        <div class="cookie-content">
+            <p>Utilizamos cookies para mejorar tu experiencia y analizar nuestro tráfico. Al continuar navegando, aceptas nuestro uso de cookies. <a href="privacy-policy.html">Más info</a>.</p>
+            <div class="cookie-actions">
+                <button id="accept-cookies" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Aceptar</button>
+                <button id="decline-cookies" class="btn" style="background: rgba(255,255,255,0.05); color: #fff; padding: 0.5rem 1.2rem; font-size: 0.85rem;">Solo técnicas</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-img-wrap" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="Resultado ampliado">
+        </div>
+    </div>
+
+    <script src="main.js?v=20"></script>
+</body>
+
+</html>
